@@ -1,22 +1,27 @@
+
 {
   "name": "nandikav1",
-  "version": "1.0.0",
-  "description": "Netlify-deployable frontend + serverless auth for NandikaV1 (demo)",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Short description of the project",
+  "main": "src/index.js",
   "scripts": {
-    "start": "netlify dev",
-    "dev": "netlify dev",
-    "build": "echo \"No build step for vanilla static site\"",
-    "lint": "echo \"no linter configured\""
+    "dev": "vite",                /* or `react-scripts start` or `next dev` depending on framework */
+    "start": "npm run dev",
+    "build": "vite build",        /* or `react-scripts build` or `next build` */
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write .",
+    "test": "echo \"No tests specified\" && exit 0"
   },
-  "author": "Alicode-netizen",
+  "keywords": [],
+  "author": "",
   "license": "MIT",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.0",
-    "uuid": "^9.0.0"
+    /* keep runtime dependencies here */
   },
   "devDependencies": {
-    "netlify-cli": "^12.0.0"
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0"
   }
 }
